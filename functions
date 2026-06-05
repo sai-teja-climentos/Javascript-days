@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <form>
+     <input id="add1" type="text"><br><br>
+     <input id="add2" type="text"><br><br>
+     <button onclick="adding()">Add+</button>
+    </form>
+
+    <script>
+      function adding(){
+
+   let add1  =Number (document.getElementById("add1").value);
+   let add2  =Number (document.getElementById("add2").value);
+
+   alert(add1*add2)
+
+
+      }  
+
+    </script>
+
+  <form>
+    <input id="input1" type="text"><br> <br> <br>
+    <input id="input2" type="text"><br> <br> <br>
+    <button onclick="onclickbutton()">Onclick Button</button>
+  </form>
+  
+<script>
+    function onclickbutton(){
+    event.preventDefault()
+
+
+    let ABC = document.getElementById("input1").value
+
+    let ABC1 = document.getElementById("input2").value
+    
+    // alert(ABC)
+    // alert(ABC1)
+   
+    console.log(ABC+ABC1)
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
