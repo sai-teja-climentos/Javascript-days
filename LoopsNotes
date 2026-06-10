@@ -1,0 +1,296 @@
+// 1. for Loop
+
+// A for loop is used when you already know how many times you want to repeat something.
+
+// Basic Syntax
+// for (initialization; condition; increment) {
+//     // code to repeat
+// }
+// Example 1: Print numbers from 1 to 10
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+// Explanation
+// let i = 1
+
+// Loop starts from 1.
+
+// i <= 10
+
+// Loop runs until i becomes greater than 10.
+
+// i++
+
+// After every loop, i increases by 1.
+
+// Output:
+
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// Example 2: Print even numbers from 2 to 20
+// for (let i = 2; i <= 20; i += 2) {
+//     console.log(i);
+// }
+
+// Output:
+
+// 2
+// 4
+// 6
+// 8
+// 10
+// 12
+// 14
+// 16
+// 18
+// 20
+
+// Here:
+
+// i += 2
+
+// means increase i by 2 every time.
+
+// 2. while Loop
+
+// A while loop is used when you want to repeat code while a condition is true.
+
+// It is useful when you do not always know exactly how many times the loop will run.
+
+// Basic Syntax
+// while (condition) {
+//     // code to repeat
+// }
+// Example 1: Print numbers from 0 to 9
+// let i = 0;
+
+// while (i < 10) {
+//     console.log(i);
+//     i++;
+// }
+
+// Output:
+
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// Explanation
+
+// First:
+
+// let i = 0;
+
+// Then the condition is checked:
+
+// i < 10
+
+// If the condition is true, the loop runs.
+
+// After printing:
+
+// i++;
+
+// This increases the value of i.
+
+// Example 2: Countdown from 5 to 1
+// let count = 5;
+
+// while (count >= 1) {
+//     console.log(count);
+//     count--;
+// }
+
+// Output:
+
+// 5
+// 4
+// 3
+// 2
+// 1
+
+// Here:
+
+// count--
+
+// means decrease the value by 1.
+
+// 3. do...while Loop
+
+// A do...while loop runs the code at least once, even if the condition is false.
+
+// Basic Syntax
+// do {
+//     // code to repeat
+// } while (condition);
+
+// The important point is:
+
+// do
+
+// runs first.
+
+// Then:
+
+// while
+
+// checks the condition.
+
+// Example 1: Print numbers from 0 to 4
+// let i = 0;
+
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 5);
+
+// Output:
+
+// 0
+// 1
+// 2
+// 3
+// 4
+// Explanation
+
+// The loop starts with:
+
+// let i = 0;
+
+// It prints i, then increases it.
+
+// The condition:
+
+// i < 5
+
+// is checked after the code runs.
+
+// Example 2: Runs at least once even when condition is false
+// let number = 10;
+
+// do {
+//     console.log("This runs once");
+// } while (number < 5);
+
+// Output:
+
+// This runs once
+
+// Even though:
+
+// number < 5
+
+// is false, the code runs one time because do...while checks the condition after running.
+
+// Clean Modern Version of Your Code
+
+// Your original code can be written like this:
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+
+// Instead of this:
+
+// i = 1;
+// j = 10;
+
+// for (i; i <= j; i++) {
+//     console.log(i);
+// }
+
+// A cleaner way is to declare variables properly:
+
+// let start = 1;
+// let end = 10;
+
+// for (let i = start; i <= end; i++) {
+//     console.log(i);
+// }
+
+// This is better because:
+
+// let
+
+// keeps the variable inside the correct scope.
+
+// Difference Between for, while, and do...while
+// Loop Type	When to Use	Condition Checked
+// for	When you know the number of repetitions	Before loop runs
+// while	When loop depends on a condition	Before loop runs
+// do...while	When code must run at least once	After loop runs
+// Simple Real-Life Example
+// for loop
+
+// Use when you know the count.
+
+// for (let step = 1; step <= 5; step++) {
+//     console.log("Walking step:", step);
+// }
+// while loop
+
+// Use when you wait for a condition.
+
+// let battery = 5;
+
+// while (battery > 0) {
+//     console.log("Phone is working. Battery:", battery);
+//     battery--;
+// }
+// do...while loop
+
+// Use when action must happen at least once.
+
+// let passwordCorrect = false;
+
+// do {
+//     console.log("Ask user to enter password");
+//     passwordCorrect = true;
+// } while (!passwordCorrect);
+// Best Practices
+
+// Use let, not undeclared variables:
+
+// let i = 1;
+
+// Avoid this:
+
+// i = 1;
+
+// Use meaningful variable names:
+
+// let start = 1;
+// let end = 10;
+
+// Avoid infinite loops. Always update the variable:
+
+// i++;
+
+// Without this, the loop may never stop:
+
+// while (i < 10) {
+//     console.log(i);
+// }
+// Practice Tasks
+
+// Try these:
+
+// // 1. Print numbers from 1 to 20 using for loop
+// // 2. Print numbers from 10 to 1 using while loop
+// // 3. Print "Hello JavaScript" 5 times using do...while loop
+// // 4. Print only odd numbers from 1 to 15
+// // 5. Calculate the sum of numbers from 1 to 10
